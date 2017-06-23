@@ -10,6 +10,11 @@ module.exports = {
     resolveLoader: {
         root: path.join(__dirname, '../node_modules'),
     },
+    resolve: {
+        alias: {
+            'vue$': 'vue/dist/vue.common.js'
+        }
+    },
     module: {
         loaders: [{
             test: /\.vue$/,

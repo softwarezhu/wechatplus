@@ -55,7 +55,7 @@ import {
   progressbar
 } from 'vue-strap'
 
-module.exports = {
+export default {
 
   name: 'LoginView',
 

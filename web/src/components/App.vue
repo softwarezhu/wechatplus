@@ -1,27 +1,26 @@
-
-
 <template>
-
-<router-view>
-</router-view>
+    <div id="app">
+        <router-view>
+            123123
+        </router-view>
+    </div>
 
 </template>
 
 <script>
+    import Login from './LoginView.vue'
 
-import store from '../vuex/store'
+    export default {
+        name: 'app',
+        data() {
+            return {
+                name: 'wechat+',
+            }
+        },
 
-module.exports = {
+        events: {},
 
-  store,
-
-  data() {
-      return {
-        name: 'wechat+',
-      }
-    },
-
-    events: {}
-}
+        components: [Login]
+    }
 
 </script>
